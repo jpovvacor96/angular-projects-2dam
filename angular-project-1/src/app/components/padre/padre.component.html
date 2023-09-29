@@ -1,0 +1,6 @@
+<div class="container">
+    <div class="caja">
+        <app-hijo [aviso]="valorPadre" ></app-hijo>
+        <app-hijo *ngFor="let avisop of avisos" [aviso]="avisop"></app-hijo>
+    </div>
+</div>

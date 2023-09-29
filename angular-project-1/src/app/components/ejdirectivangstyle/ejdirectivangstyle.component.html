@@ -1,0 +1,10 @@
+<hr>
+<h3>Ejemplo de uso de la directiva ngStyle:</h3>
+<h4>Introduzca la puntuación del alumno:</h4>
+<input type="number" class="form-control" [(ngModel)]="puntuacion" min="0" max="10">
+<hr>
+<div *ngIf="puntuacion">
+    <h4 style="display: inline-block;">Puntuación obtenida:&nbsp;</h4>
+    <h4 style="display: inline-block;" [ngStyle]="{color:setColor()}">{{puntuacion}}</h4>
+</div>
+

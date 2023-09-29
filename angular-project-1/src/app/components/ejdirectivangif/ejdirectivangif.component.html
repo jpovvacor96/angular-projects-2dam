@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>Prueba de directiva ngif:</h3>
+    <label for="">Nombre y apellidos</label>
+    <input type="text" class="form-control" [(ngModel)]="nombre" placeholder="José Palomino Ochoa">
+    <button type="submit" class="btn btn-primary" *ngIf="nombre; else desactivado">Enviar</button>
+    <ng-template #desactivado>
+        <button type="submit" class="btn btn-primary" disabled>Enviar</button>
+    </ng-template>
+    <hr>
+    <h3>¿Cuál es la capital de España?</h3>
+    <input type="text" class="form-control" [(ngModel)]="capital">
+    <h4 *ngIf="!capital; else correcto">Complete la pregunta</h4>
+    <ng-template #correcto>
+        <h4 *ngIf="setResultado(); else incorrecto" class="text-success">¡Correcto!</h4>
+    </ng-template>
+    <ng-template #incorrecto>
+        <h4 class="text-danger">Lo siento, inténtelo de nuevo</h4>
+    </ng-template>
+</div>
