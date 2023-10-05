@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+  hoy:any=new Date();
+  copyright:String='© Todos los derechos reservados';
 }

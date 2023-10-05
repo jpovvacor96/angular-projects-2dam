@@ -1,0 +1,21 @@
+<div class="container rounded text-center mt-3">
+    <h3>Lista de proveedores</h3>
+    <div class=" m-2 p-2">
+        <table class="table table-warning table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let proveedor of proveedores">
+                <td>{{proveedor.nombre}}</td>
+                <td><a href="mailto:{{proveedor.email}}">{{proveedor.email}}</a></td>
+                <td>{{proveedor.telefono}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
