@@ -1,29 +1,40 @@
 {
-    "proveedores":[
-      {
-        "id": 0,
-        "nombre": "Telefónica",
-        "cif": "B12345678",
-        "direccion": "Paseo de la Castellana, 100",
-        "cp": "28.010",
-        "localidad": "Madrid",
-        "provincia": "Madrid",
-        "telefono": 911111111,
-        "email": "info@telefonica.com",
-        "contacto": "Juan Pérez"
-      },
-      {
-        "id": 1,
-        "nombre": "Iberdrola",
-        "cif": "B87654321",
-        "direccion": "Príncipe de Vergara, 200",
-        "cp": "28.015",
-        "localidad": "Madrid",
-        "provincia": "Madrid",
-        "telefono": 922222222,
-        "email": "info@iberdrola.com",
-        "contacto": "Laura Martínez"
-      }
-
-    ]
+  "proveedores": [
+    {
+      "id": 0,
+      "nombre": "Telefónica",
+      "cif": "B12345678",
+      "direccion": "Paseo de la Castellana, 100",
+      "cp": "28.010",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "telefono": 911111111,
+      "email": "info@telefonica.com",
+      "contacto": "Juan Pérez"
+    },
+    {
+      "id": 1,
+      "nombre": "Iberdrola",
+      "cif": "B87654321",
+      "direccion": "Príncipe de Vergara, 200",
+      "cp": "28.015",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "telefono": 922222222,
+      "email": "info@iberdrola.com",
+      "contacto": "Laura Martínez"
+    },
+    {
+      "id": 2,
+      "nombre": "Ainara",
+      "cif": "413408873447",
+      "direccion": "Camino Nueva, 51, 37858, Sardón De Los Frailes(salamanca)",
+      "cp": "37858",
+      "localidad": "Sardón De Los Frailes",
+      "provincia": "Salamanca",
+      "telefono": 686990989,
+      "email": "ada256qdn@usa.com",
+      "contacto": "Calvo"
+    }
+  ]
 }

@@ -18,4 +18,8 @@ export class ProveedoresService {
     return this.http.get<Proveedor[]>(`${this.url}`);
   }
 
+  altaProveedor(proveedor:Proveedor):Observable<Proveedor>{
+    return this.http.post<Proveedor>(`${this.url}`, proveedor);
+  }
+
 }
