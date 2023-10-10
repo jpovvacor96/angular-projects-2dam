@@ -35,6 +35,54 @@
       "telefono": 686990989,
       "email": "ada256qdn@usa.com",
       "contacto": "Calvo"
+    },
+    {
+      "id": 3,
+      "nombre": "Antonio Caro",
+      "cif": "827358721358",
+      "direccion": "Avenida de la Virgen de la Soledad, 12",
+      "cp": "41320",
+      "localidad": "Cantillana",
+      "provincia": "",
+      "telefono": 82736,
+      "email": "kajgf",
+      "contacto": "augsfbo"
+    },
+    {
+      "id": 4,
+      "nombre": "",
+      "cif": "",
+      "direccion": "",
+      "cp": "",
+      "localidad": "",
+      "provincia": "",
+      "telefono": 0,
+      "email": "",
+      "contacto": ""
+    },
+    {
+      "id": 5,
+      "nombre": "",
+      "cif": "",
+      "direccion": "",
+      "cp": "",
+      "localidad": "",
+      "provincia": "",
+      "telefono": 0,
+      "email": "",
+      "contacto": ""
+    },
+    {
+      "id": 6,
+      "nombre": "",
+      "cif": "",
+      "direccion": "",
+      "cp": "",
+      "localidad": "",
+      "provincia": "",
+      "telefono": 0,
+      "email": "",
+      "contacto": ""
     }
   ]
 }
