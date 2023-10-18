@@ -1,0 +1,29 @@
+<div class="container rounded text-center mt-3">
+    <h3>Listado de presupuestos</h3>
+    <div class="m-2 p-2">
+        <table class="table table-warning table-striped">
+            <thead>
+              <tr>
+                <th>Proveedor</th>
+                <th>Fecha</th>
+                <th>Concepto</th>
+                <th>Base</th>
+                <th>IVA</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let presupuesto of presupuestos">
+                <td>{{presupuesto.proveedor}}</td>
+                <td>{{presupuesto.fecha}}</td>
+                <td>{{presupuesto.concepto}}</td>
+                <td>{{presupuesto.base}}</td>
+                <td>{{presupuesto.iva}}</td>
+                <td>{{presupuesto.total}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <a class="btn azulCadiz m-2 text-white" routerLink="/addpresupuesto">Nuevo presupuesto</a>
+</div>
+

@@ -41,7 +41,7 @@ export class FooterComponent {
   //###################
   
   /**
-   * Devuelve la fehca y la hora actual
+   * Devuelve la fecha y la hora actual
    * @returns Fecha y hora actual
    */
   mueveReloj() {

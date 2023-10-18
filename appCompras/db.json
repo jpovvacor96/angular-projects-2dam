@@ -38,51 +38,47 @@
     },
     {
       "id": 3,
-      "nombre": "Antonio Caro",
-      "cif": "827358721358",
-      "direccion": "Avenida de la Virgen de la Soledad, 12",
-      "cp": "41320",
-      "localidad": "Cantillana",
-      "provincia": "",
-      "telefono": 82736,
-      "email": "kajgf",
-      "contacto": "augsfbo"
+      "nombre": "Juan Luis Infantes Lagares",
+      "cif": "12345678M",
+      "direccion": "Calle falsa, número 12",
+      "cp": "55555",
+      "localidad": "Bollullos Par del Condado",
+      "provincia": "Huelva",
+      "telefono": 123456789,
+      "email": "jpovvacor96@gmail.com",
+      "contacto": "Juanlu"
+    }
+  ],
+  "presupuestos": [
+    {
+      "id": 0,
+      "proveedor": "Amazon",
+      "fecha": "10/6/2018",
+      "concepto": "Discos duros",
+      "base": 70,
+      "tipo": 0.21,
+      "iva": 14.7,
+      "total": 84.7
     },
     {
-      "id": 4,
-      "nombre": "",
-      "cif": "",
-      "direccion": "",
-      "cp": "",
-      "localidad": "",
-      "provincia": "",
-      "telefono": 0,
-      "email": "",
-      "contacto": ""
+      "id": 1,
+      "proveedor": "Endesa",
+      "fecha": "15/8/2020",
+      "concepto": "Suministro eléctrico",
+      "base": 150,
+      "tipo": 0.21,
+      "iva": 31.5,
+      "total": 181.5
     },
     {
-      "id": 5,
-      "nombre": "",
-      "cif": "",
-      "direccion": "",
-      "cp": "",
-      "localidad": "",
-      "provincia": "",
-      "telefono": 0,
-      "email": "",
-      "contacto": ""
-    },
-    {
-      "id": 6,
-      "nombre": "",
-      "cif": "",
-      "direccion": "",
-      "cp": "",
-      "localidad": "",
-      "provincia": "",
-      "telefono": 0,
-      "email": "",
-      "contacto": ""
+      "id": 2,
+      "proveedor": "Universidad de Córdoba",
+      "fecha": "2023-10-02",
+      "concepto": "Soporte técnico",
+      "base": 500,
+      "tipo": "0.04",
+      "iva": 20,
+      "total": 520
     }
   ]
 }

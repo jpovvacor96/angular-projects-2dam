@@ -22,4 +22,12 @@ export class ProveedoresService {
     return this.http.post<Proveedor>(`${this.url}`, proveedor);
   }
 
+  recuperarProveedor(id:number):Observable<Proveedor>{
+    return this.http.get<Proveedor>(`${this.url}/${id}`)
+  }
+
+  modificarProveedor(id:number,proveedor:Proveedor):Observable<Proveedor>{
+    return this.http.put<Proveedor>(`${this.url}/${id}`, proveedor);
+  }
+
 }

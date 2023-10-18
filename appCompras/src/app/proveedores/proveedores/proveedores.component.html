@@ -5,15 +5,34 @@
             <thead>
               <tr>
                 <th>Nombre</th>
-                <th>Correo electrónico</th>
+                <th>CIF</th>
+                <th>Dirección</th>
+                <th>Código postal</th>
+                <th>Localidad</th>
+                <th>Provincia</th>
                 <th>Teléfono</th>
+                <th>Correo electrónico</th>
+                <th>Contacto</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let proveedor of proveedores">
                 <td>{{proveedor.nombre}}</td>
-                <td><a href="mailto:{{proveedor.email}}">{{proveedor.email}}</a></td>
+                <td>{{proveedor.cif}}</td>
+                <td>{{proveedor.direccion}}</td>
+                <td>{{proveedor.cp}}</td>
+                <td>{{proveedor.localidad}}</td>
+                <td>{{proveedor.provincia}}</td>
                 <td>{{proveedor.telefono}}</td>
+                <td><a href="mailto:{{proveedor.email}}">{{proveedor.email}}</a></td>
+                <td>{{proveedor.contacto}}</td>
+                <td>
+                  <div class="btn-group">
+                    <button class="btn azulCadiz text-white m-1 rounded" (click)="recuperarProveedor(proveedor.id)">Modificar</button>
+                    <button class="btn btn-danger text-white m-1 rounded">Eliminar</button>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>

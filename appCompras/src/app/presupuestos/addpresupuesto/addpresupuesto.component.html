@@ -1,0 +1,47 @@
+<div class="container col-4">
+    <div class="text-center mt-1 p-1 pb-5 mb-5 rounded">
+        <h4>Añadir un nuevo presupuesto</h4>
+        <form #proveedorForm action="">
+            <div class="form-group">
+                <label for="proveedor">Proveedor</label>
+                <input type="text" class="form-control" id="proveedor" name="proveedor" [(ngModel)]="presupuesto.proveedor" #nombre="ngModel" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" [(ngModel)]="presupuesto.fecha">
+            </div>
+            <div class="form-group">
+                <label for="concepto">Concepto</label>
+                <input type="text" class="form-control" id="concepto" name="concepto" [(ngModel)]="presupuesto.concepto">
+            </div>
+            <div class="form-group">
+                <label for="base">Base</label>
+                <input type="number" class="form-control" id="base" name="base" [(ngModel)]="presupuesto.base">
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <select class="form-control" id="tipo" [(ngModel)]="presupuesto.tipo" name="tipo">
+                    <option value="" disabled>Seleccione...</option>
+                    <option value=0>0%</option>
+                    <option value=0.04>4%</option>
+                    <option value=0.10>10%</option>
+                    <option value=0.21>21%</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="iva">IVA</label>
+                <input type="number" class="form-control" id="iva" name="iva" [(ngModel)]="presupuesto.iva" value="{{calculaIVA()}}" disabled>
+            </div>
+            <div class="form-group">
+                <label for="total">Total</label>
+                <input type="number" class="form-control" id="total" name="total" [(ngModel)]="presupuesto.total" disabled value="{{calculaIVA()+presupuesto.base}}">
+            </div>
+            <div class="box-footer mt-2">
+                <button type="submit" class="btn btn-success me-2" (click)="altaPresupuesto()">Enviar</button>
+                <button type="reset" class="btn btn-info">Borrar</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+

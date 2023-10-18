@@ -10,6 +10,9 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ProveedoresComponent } from './proveedores/proveedores/proveedores.component';
 import { AddproveedorComponent } from './proveedores/addproveedor/addproveedor.component';
+import { PresupuestosComponent } from './presupuestos/presupuestos/presupuestos.component';
+import { AddpresupuestoComponent } from './presupuestos/addpresupuesto/addpresupuesto.component';
+import { ModproveedorComponent } from './proveedores/modproveedor/modproveedor.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { AddproveedorComponent } from './proveedores/addproveedor/addproveedor.c
     HeaderComponent,
     FooterComponent,
     ProveedoresComponent,
-    AddproveedorComponent
+    AddproveedorComponent,
+    PresupuestosComponent,
+    AddpresupuestoComponent,
+    ModproveedorComponent
   ],
   imports: [
     BrowserModule,
