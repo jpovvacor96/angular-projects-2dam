@@ -26,6 +26,19 @@ export class ProveedoresComponent implements OnInit {
     this.router.navigate(['modproveedor', id])
   }
 
+  eliminarProveedor(id:number){
+    if(confirm("¿Desea realmente eliminar el proveedor?")){
+      this.proveedoresService.eliminarProveedor(id).subscribe(
+        (datos:any) => {
+          if(datos){
+            alert("Proveedor borrado")
+            this.recuperarProveedores();
+          }
+        }
+      )
+    }
+  }
+
   ngOnInit(): void {
     this.recuperarProveedores();
   }

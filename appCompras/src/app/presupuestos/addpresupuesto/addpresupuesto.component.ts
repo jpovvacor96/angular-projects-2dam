@@ -13,7 +13,6 @@ export class AddpresupuestoComponent {
   presupuesto!:Presupuesto;
 
   constructor(private presupuestoService:PresupuestosService, private router:Router){
-
     this.presupuesto={
       id: 0,
       proveedor: '',

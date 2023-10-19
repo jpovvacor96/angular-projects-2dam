@@ -39,4 +39,8 @@ export class AddproveedorComponent {
     })
   }
 
+  cancelar(){
+    this.router.navigate(["/proveedores"])
+  }
+
 }

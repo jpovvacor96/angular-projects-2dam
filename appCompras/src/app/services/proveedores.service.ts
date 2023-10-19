@@ -30,4 +30,8 @@ export class ProveedoresService {
     return this.http.put<Proveedor>(`${this.url}/${id}`, proveedor);
   }
 
+  eliminarProveedor(id:number):Observable<Proveedor>{
+    return this.http.delete<Proveedor>(`${this.url}/${id}`);
+  }
+
 }

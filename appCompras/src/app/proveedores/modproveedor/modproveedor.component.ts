@@ -41,13 +41,18 @@ export class ModproveedorComponent implements OnInit{
     );
   }
 
-  altaProveedor(){
-    this.proveedoresService.altaProveedor(this.proveedor).subscribe((datos:any)=>{
-      if(datos){
-        alert("Proveedor insertado")
-        this.router.navigate(["/proveedores"])
+  modificarProveedor(id: number){
+      this.proveedoresService.modificarProveedor(id, this.proveedor).subscribe((datos:any) => {
+        if(datos){
+          alert("Proveedor modificado")
+          this.router.navigate(["/proveedores"])
+        }
       }
-    })
+      );
+  }
+
+  cancelar(){
+    this.router.navigate(["/proveedores"])
   }
 
   ngOnInit(): void {
@@ -55,8 +60,7 @@ export class ModproveedorComponent implements OnInit{
       (parametros: ParamMap)=>{
         this.p1=parseInt(parametros.get('id')!);
       }  
-    );
-    
+    ); 
     this.recuperarProveedor(this.p1);
   }
 

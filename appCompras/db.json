@@ -2,12 +2,12 @@
   "proveedores": [
     {
       "id": 0,
-      "nombre": "Telefónica",
-      "cif": "B12345678",
+      "nombre": "Chris Ramos",
+      "cif": "12345678B",
       "direccion": "Paseo de la Castellana, 100",
-      "cp": "28.010",
-      "localidad": "Madrid",
-      "provincia": "Madrid",
+      "cp": "28010",
+      "localidad": "Cádiz",
+      "provincia": "Cádiz",
       "telefono": 911111111,
       "email": "info@telefonica.com",
       "contacto": "Juan Pérez"
@@ -15,9 +15,9 @@
     {
       "id": 1,
       "nombre": "Iberdrola",
-      "cif": "B87654321",
+      "cif": "87654321B",
       "direccion": "Príncipe de Vergara, 200",
-      "cp": "28.015",
+      "cp": "28015",
       "localidad": "Madrid",
       "provincia": "Madrid",
       "telefono": 922222222,
@@ -26,27 +26,51 @@
     },
     {
       "id": 2,
-      "nombre": "Ainara",
-      "cif": "413408873447",
-      "direccion": "Camino Nueva, 51, 37858, Sardón De Los Frailes(salamanca)",
-      "cp": "37858",
-      "localidad": "Sardón De Los Frailes",
-      "provincia": "Salamanca",
-      "telefono": 686990989,
-      "email": "ada256qdn@usa.com",
-      "contacto": "Calvo"
+      "nombre": "Jacobo Tena Llorens",
+      "cif": "93647920Q",
+      "direccion": "Kalea Madrid, 64, 17399, Fortià(girona)",
+      "cp": "17399",
+      "localidad": "Fortià",
+      "provincia": "Gerona",
+      "telefono": 693371902,
+      "email": "oe01mqyap@caramail.com",
+      "contacto": "jacobo_80"
     },
     {
       "id": 3,
-      "nombre": "Juan Luis Infantes Lagares",
-      "cif": "12345678M",
-      "direccion": "Calle falsa, número 12",
-      "cp": "55555",
-      "localidad": "Bollullos Par del Condado",
-      "provincia": "Huelva",
-      "telefono": 123456789,
-      "email": "jpovvacor96@gmail.com",
-      "contacto": "Juanlu"
+      "nombre": "Aurora Fuentes Galindo",
+      "cif": "15592205E",
+      "direccion": "Barrio Madrid, 91",
+      "cp": "47338",
+      "localidad": "Villanueva De La Condesa",
+      "provincia": "Valladolid",
+      "telefono": 743688899,
+      "email": "y9ho9xcyl@caramail.com",
+      "contacto": "aurora_82"
+    },
+    {
+      "id": 4,
+      "nombre": "Angeles Pazos Pulido",
+      "cif": "29328430A",
+      "direccion": "Plazuela De España, 58",
+      "cp": "49473",
+      "localidad": "Tábara",
+      "provincia": "Zamora",
+      "telefono": 698218532,
+      "email": "7fxk8wrog@lycos.nl",
+      "contacto": "angeles_63"
+    },
+    {
+      "id": 5,
+      "nombre": "Alfredo Casado Pons",
+      "cif": "07306397X",
+      "direccion": "Praza Nueva, 4",
+      "cp": "37977",
+      "localidad": "San Pelayo De Guareña",
+      "provincia": "Salamanca",
+      "telefono": 758168158,
+      "email": "zzohkipr@iname.com",
+      "contacto": "alfredo_51"
     }
   ],
   "presupuestos": [
@@ -79,6 +103,16 @@
       "tipo": "0.04",
       "iva": 20,
       "total": 520
+    },
+    {
+      "id": 3,
+      "proveedor": "Serigrafía García",
+      "fecha": "2023-10-04",
+      "concepto": "Camisetas deportivas",
+      "base": 560,
+      "tipo": "0.21",
+      "iva": 117.6,
+      "total": 677.6
     }
   ]
 }
