@@ -11,6 +11,7 @@
 
 .sidenav .mat-toolbar {
   background: inherit;
+  
 }
 
 .mat-toolbar.mat-primary {
@@ -25,5 +26,5 @@ mat-toolbar{
 
 mat-sidenav-content{
   background-color: rgb(213, 204, 204);
-  color: black;
 }
+

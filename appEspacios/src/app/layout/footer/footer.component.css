@@ -1,6 +1,5 @@
 .footer{
-    position: relative;
     text-align: center;
     background-color: green;
-    color: black;
+    color: rgb(255, 255, 255);
 }

@@ -11,12 +11,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { FooterComponent } from './layout/footer/footer.component';
 import { BarraLateralComponent } from './layout/barra-lateral/barra-lateral.component';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    BarraLateralComponent
+    BarraLateralComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,9 @@ import { BarraLateralComponent } from './layout/barra-lateral/barra-lateral.comp
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,9 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./barra-lateral.component.css']
 })
 export class BarraLateralComponent {
+
+  abierto:boolean=true;
+
   private breakpointObserver = inject(BreakpointObserver);
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
@@ -16,4 +19,9 @@ export class BarraLateralComponent {
       map(result => result.matches),
       shareReplay()
     );
+
+  abrirMenu(){
+    this.abierto=!this.abierto;
+  }
+
 }
