@@ -1,1 +1,151 @@
-<p>crear works!</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h1>Crear Reserva</h1>
+      <form>
+        <mat-card class="p-3">
+          <mat-card-subtitle>Datos personales</mat-card-subtitle>
+          <div class="row p-3">
+
+            <div class="col-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email"/>
+              </mat-form-field>
+            </div>
+
+            <div class="col-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName="nombre" />
+              </mat-form-field>
+            </div>
+
+            <div class="col-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Unidad/Departamento/Centro</mat-label>
+                <input matInput formControlName="unidad" />
+              </mat-form-field>
+            </div>
+
+            <div class="col-4">
+              <div class="col-4">
+                <mat-form-field appearance="outline">
+                  <mat-label>Teléfono</mat-label>
+                  <input matInput formControlName="telefono" />
+                </mat-form-field>
+              </div>
+
+            </div>
+
+            <div class="col-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Cargo</mat-label>
+                <div>
+                  <mat-select formControlName="cargo">
+                    <mat-option *ngFor="let cargo of cargos" value="{{ cargo }}">{{ cargo }}</mat-option>
+                  </mat-select>
+                </div>
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-card>
+
+        <mat-card class="p-3">
+
+          <mat-card-subtitle>Datos de la actividad</mat-card-subtitle>
+
+          <div class="row p-3">
+            <div class="col-4">
+              <div class="col-4">
+                <mat-form-field appearance="outline">
+                  <mat-label>Tipo</mat-label>
+                  <mat-select formControlName="tipo">
+                    <mat-option value="docente">Docente</mat-option>
+                    <mat-option value="noDocente">No docente</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+            </div>
+
+            <div class="col-4" >
+              <mat-form-field appearance="outline">
+                <mat-label>Actividad</mat-label>
+                <input matInput formControlName="nombreActividad" />
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-card>
+
+        <mat-card class="p-3">
+
+          <mat-card-subtitle>Horario de la reserva</mat-card-subtitle>
+
+          <div class="row p-3">
+            <div class="col-4">
+              <div class="col-4">
+                <mat-form-field appearance="fill">
+                  <mat-label>Rango de fechas</mat-label>
+
+                  <mat-date-range-input [rangePicker]="picker">
+                    <input matStartDate formControlName="start" placeholder="Start date" />
+                    <input matEndDate formControlName="end" placeholder="End date" />
+                  </mat-date-range-input>
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-date-range-picker #picker></mat-date-range-picker>
+
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Día</mat-label>
+                <mat-select formControlName="dia">
+                  <mat-option *ngFor="let day of diasSemana" value="{{ day }}">{{
+                  day | titlecase
+                  }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+            <div class="col-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Hora de inicio</mat-label>
+                <mat-select formControlName="horaInicio">
+                  <mat-option *ngFor="let hour of horas" value="{{ hour }}">{{
+                  hour
+                  }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+            <div class="col-4">
+              <div class="col-4">
+                <mat-form-field appearance="outline">
+                  <mat-label>Hora de fin</mat-label>
+                  <mat-select formControlName="horaFin">
+                    <mat-option *ngFor="let hour of horas" value="{{ hour }}">{{
+                  hour
+                  }}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+
+
+          </div>
+
+          <button mat-stroked-button color="primary" (click)="save()">
+            Guardar
+          </button>
+
+        </mat-card>
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

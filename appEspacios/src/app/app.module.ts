@@ -13,6 +13,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { BarraLateralComponent } from './layout/barra-lateral/barra-lateral.component';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
+import{MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -30,8 +32,10 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    MatCardModule
-  ],
+    MatCardModule,
+    MatFormFieldModule,
+    MatSelectModule
+ ],
   providers: [],
   bootstrap: [AppComponent]
 })

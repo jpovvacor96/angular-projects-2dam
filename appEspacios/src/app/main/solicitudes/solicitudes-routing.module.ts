@@ -4,14 +4,17 @@ import { ConsultarComponent } from './pages/consultar/consultar.component';
 import { CrearComponent } from './pages/crear/crear.component';
 
 const routes: Routes = [
-  {path:'consultar', component:ConsultarComponent},
   {
-    path:'crear',
-    component:CrearComponent,
+    path: 'consultar',
+    component: ConsultarComponent
   },
   {
-    path:'**',
-    redirectTo:'consultar'
+    path: 'crear',
+    component: CrearComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'consultar'
   }
 ];
 

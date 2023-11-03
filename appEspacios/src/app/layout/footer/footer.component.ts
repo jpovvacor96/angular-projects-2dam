@@ -11,11 +11,11 @@ export class FooterComponent {
   //##################
 
   /**Fecha y hora actual*/
-  hoy:any=new Date();
+  hoy: any = new Date();
 
   /**Impresión de la licencia*/
-  copyright:String='© Todos los derechos reservados';
-  
+  copyright: String = '© Todos los derechos reservados';
+
   //#############
   //CONSTRUCTORES
   //#############
@@ -23,22 +23,22 @@ export class FooterComponent {
   /**
    * Determina el comportamiento del programa al iniciarse
    */
-  constructor(){
-    setInterval(()=>{
+  constructor() {
+    setInterval(() => {
       this.mueveReloj();
-    },1000)
+    }, 1000)
   }
-  
+
   //###################
   //MÉTODOS Y FUNCIONES
   //###################
-  
+
   /**
    * Devuelve la fecha y la hora actual
    * @returns Fecha y hora actual
    */
   mueveReloj() {
-    const momentoActual=new Date();
+    const momentoActual = new Date();
     return momentoActual;
   }
 }
