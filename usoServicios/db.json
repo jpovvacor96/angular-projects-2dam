@@ -1,24 +1,67 @@
 {
-	"personas": [
-		{
-			"id": 0,
-			"nombre": "Manolo Pérez",
-			"telefono": "102974",
-			"email": "manolo@gmail.com",
-			"tipo": [
-				"Amigo",
-				"Familiar",
-				"Trabajo"
-			]
-		},
-		{
-			"id": 1,
-			"nombre": "José Antonio Calero",
-			"telefono": "982638273",
-			"email": "joseantonio@gmail.com",
-			"tipo": [
-				"Trabajo"
-			]
-		}
-	]
+  "personas": [
+    {
+      "id": 1,
+      "nombre": "José Antonio Calero",
+      "telefono": "982638273",
+      "email": "joseantonio@gmail.com",
+      "tipo": "Trabajo"
+    },
+    {
+      "id": 3,
+      "nombre": "Pedro Sánchez Puto",
+      "telefono": "123456789",
+      "email": "elSepulturero@666.com",
+      "tipo": "Trabajo"
+    },
+    {
+      "id": 4,
+      "nombre": "Antonio Caro",
+      "telefono": "1982641824",
+      "email": "antonio@caro.com",
+      "tipo": "Familia"
+    },
+    {
+      "id": 8,
+      "nombre": "Juanlu",
+      "telefono": "182754",
+      "email": "juanlu@gmail.com",
+      "tipo": "Amigos"
+    },
+    {
+      "id": 9,
+      "nombre": "Rafael Velez Fajardo",
+      "telefono": "771347955",
+      "email": "djd683yw@mail.com",
+      "tipo": "Amigos"
+    },
+    {
+      "id": 10,
+      "nombre": "Adam Rincon Pineda",
+      "telefono": "713666685",
+      "email": "vuw013edo@caramail.com",
+      "tipo": "Familia"
+    },
+    {
+      "id": 11,
+      "nombre": "Carmelo Pujol Serrano",
+      "telefono": "694998087",
+      "email": "xqttggqn9@lycos.de",
+      "tipo": "Trabajo"
+    },
+    {
+      "id": 12,
+      "nombre": "Juan Mateu Roca",
+      "telefono": "631488364",
+      "email": "oy2dx974@yahoo.es",
+      "tipo": "Amigos"
+    },
+    {
+      "id": 13,
+      "nombre": "Domingo Serrano Calero",
+      "telefono": "601774628",
+      "email": "4iuzqbo3f@lycos.nl",
+      "tipo": "Amigos"
+    }
+  ]
 }
