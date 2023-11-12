@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import { Persona } from 'src/app/models/persona';
 import { ServicioService } from 'src/app/servicios/servicio.service';
 
@@ -11,7 +12,7 @@ export class LeerComponent implements OnInit{
 
   personas!:Persona[];
 
-  constructor(private servicioService:ServicioService){
+  constructor(private servicioService:ServicioService, private router: Router){
 
   }
 
@@ -32,6 +33,10 @@ export class LeerComponent implements OnInit{
         }
       )
     }
+  }
+
+  abrirFormActualizar(id:number){
+    this.router.navigate(['actualizar', id])
   }
 
   ngOnInit(): void {

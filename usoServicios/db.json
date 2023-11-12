@@ -8,25 +8,11 @@
       "tipo": "Trabajo"
     },
     {
-      "id": 3,
-      "nombre": "Pedro Sánchez Puto",
-      "telefono": "123456789",
-      "email": "elSepulturero@666.com",
-      "tipo": "Trabajo"
-    },
-    {
       "id": 4,
       "nombre": "Antonio Caro",
       "telefono": "1982641824",
       "email": "antonio@caro.com",
       "tipo": "Familia"
-    },
-    {
-      "id": 8,
-      "nombre": "Juanlu",
-      "telefono": "182754",
-      "email": "juanlu@gmail.com",
-      "tipo": "Amigos"
     },
     {
       "id": 9,
@@ -43,13 +29,6 @@
       "tipo": "Familia"
     },
     {
-      "id": 11,
-      "nombre": "Carmelo Pujol Serrano",
-      "telefono": "694998087",
-      "email": "xqttggqn9@lycos.de",
-      "tipo": "Trabajo"
-    },
-    {
       "id": 12,
       "nombre": "Juan Mateu Roca",
       "telefono": "631488364",
@@ -62,6 +41,27 @@
       "telefono": "601774628",
       "email": "4iuzqbo3f@lycos.nl",
       "tipo": "Amigos"
+    },
+    {
+      "id": 14,
+      "nombre": "Martina Navas Ferreiro",
+      "telefono": "701023559",
+      "email": "62domsuopt@journalism.com",
+      "tipo": "Amigos"
+    },
+    {
+      "id": 15,
+      "nombre": "Martina Navas Ferreiro",
+      "telefono": "701023559",
+      "email": "62domsuopt@journalism.com",
+      "tipo": "Amigos"
+    },
+    {
+      "id": 16,
+      "nombre": "German Ramos Bermudez",
+      "telefono": "687755645",
+      "email": "kxpxvi1b@caramail.com",
+      "tipo": "Familia"
     }
   ]
 }

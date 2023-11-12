@@ -8,13 +8,21 @@ import {HttpClientModule} from '@angular/common/http';
 import { CrearComponent } from './crud/crear/crear.component';
 import { FormsModule } from '@angular/forms';
 import { ActualizarComponent } from './crud/actualizar/actualizar.component';
+import { MenuComponent } from './layout/menu/menu.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { HomeComponent } from './layout/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LeerComponent,
     CrearComponent,
-    ActualizarComponent
+    ActualizarComponent,
+    MenuComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

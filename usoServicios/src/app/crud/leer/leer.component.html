@@ -1,6 +1,5 @@
 <div class="container rounded text-center mt-3">
-    <h3 class="text-white">LISTA DE CONTACTOS</h3>
-    <div class="m-4 p-2">
+    <div class="m-1 p-2">
         <table class="table table-dark table-striped">
             <thead>
               <tr>
@@ -8,7 +7,7 @@
                 <th>Teléfono</th>
                 <th>Email</th>
                 <th>Tipo</th>
-                <th>Eliminación</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -18,14 +17,14 @@
                 <td>{{persona.email}}</td>
                 <td>{{persona.tipo}}</td>
                 <td>
+                  <button class="btn btn-primary btn-sm text-white m-1 rounded" (click)="abrirFormActualizar(persona.id)">Actualizar</button>
                   <div class="btn-group">
-                    <button class="btn btn-danger text-white m-1 rounded" (click)="borrarUno(persona.id)">Eliminar</button>
+                    <button class="btn btn-danger btn-sm text-white m-1 rounded" (click)="borrarUno(persona.id)">Eliminar</button>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
     </div>
-    <button class="btn btn-success">Nuevo contacto</button>
 </div>
 

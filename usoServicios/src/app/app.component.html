@@ -1,7 +1,12 @@
-<app-leer></app-leer>
-<br>
-<br>
-<app-crear></app-crear>
-<br>
-<br>
-<app-actualizar></app-actualizar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="container col-3 text-white">
+            <app-menu></app-menu>
+        </div>
+        <div class="container col-9">
+            <app-header></app-header>
+            <router-outlet></router-outlet>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>
