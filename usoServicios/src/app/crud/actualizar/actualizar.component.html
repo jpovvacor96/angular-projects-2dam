@@ -1,27 +1,30 @@
 <div class="container col-3">
     <div class="text-center mt-1 p-1 rounded">
-        <form action="" class="text-white mt-3">
+        <form #formPersona="ngForm" action="" class="text-white mt-3">
             <div class="form-group" >
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control bg-dark text-white" id="nombre" name="nombre" [(ngModel)]="persona.nombre">
+                <label for="nombre" *ngIf="nombre.pristine || nombre.valid">Nombre</label>
+                <span class="text-danger fw-bold" *ngIf="nombre.invalid && nombre.dirty">El formato del nombre es incorrecto</span>
+                <input type="text" class="form-control bg-dark text-white" name="nombre" [(ngModel)]="persona.nombre" #nombre="ngModel" required minlength="4">
             </div>
             <div class="form-group">
-                <label for="nombre">Teléfono</label>
-                <input type="text" class="form-control bg-dark text-white" id="telefono" name="telefono" [(ngModel)]="persona.telefono">
+                <label for="telefono" *ngIf="telefono.pristine || telefono.valid">Teléfono</label>
+                <span class="text-danger fw-bold" *ngIf="telefono.invalid && telefono.dirty">El formato del teléfono no es correcto</span>
+                <input type="text" class="form-control bg-dark text-white" name="telefono" [(ngModel)]="persona.telefono" #telefono="ngModel" required pattern="[0-9]{9}">
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control bg-dark text-white" id="email" name="email" [(ngModel)]="persona.email">
+                <label for="email" *ngIf="email.pristine || email.valid">Email</label>
+                <span class="text-danger fw-bold" *ngIf="email.invalid && email.dirty">El formato del email no es correcto</span>
+                <input type="text" class="form-control bg-dark text-white" id="email" name="email" [(ngModel)]="persona.email" #email="ngModel" required pattern="[a-z0-9,_%+-]{2,20}@[a-z0-9,_%+-]{2,20}.[a-z0-9]{2,3}">
             </div>
             <div class="form-group">
-                <label for="tipo">Tipo: </label>
+                <label for="tipo">Tipo</label>
                 <select class="form-control bg-dark text-white" name="tipo" [(ngModel)]="persona.tipo">
                     <option value="">Seleccione el tipo</option>
                     <option *ngFor="let tipo of tipos">{{tipo}}</option>
                 </select>
               </div>
             <div class="box-footer mt-4 mb-4">
-                <button type="submit" class="btn btn-success me-2" (click)="actualizarUno(persona.id)">Actualizar</button>
+                <button type="submit" class="btn btn-success me-2" (click)="actualizarUno(persona.id)" [disabled]="formPersona.form.invalid">Actualizar</button>
                 <button type="reset" class="btn btn-primary text-white me-2">Borrar</button>
             </div>
         </form>

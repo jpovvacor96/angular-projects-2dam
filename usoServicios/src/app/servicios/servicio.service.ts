@@ -18,6 +18,10 @@ export class ServicioService {
     return this.http.get<Persona[]>(this.url);
   }
 
+  public leerUno(id:number):Observable<Persona>{
+    return this.http.get<Persona>(`${this.url}/${id}`);
+  }
+
   public crearUno(persona:Persona):Observable<Persona>{
     return this.http.post<Persona>(this.url, persona);
   }

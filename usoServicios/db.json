@@ -2,36 +2,29 @@
   "personas": [
     {
       "id": 1,
-      "nombre": "José Antonio Calero",
+      "nombre": "José Antonio Páez",
       "telefono": "982638273",
       "email": "joseantonio@gmail.com",
       "tipo": "Trabajo"
     },
     {
-      "id": 4,
-      "nombre": "Antonio Caro",
-      "telefono": "1982641824",
-      "email": "antonio@caro.com",
-      "tipo": "Familia"
-    },
-    {
       "id": 9,
-      "nombre": "Rafael Velez Fajardo",
-      "telefono": "771347955",
+      "nombre": "Rafael Velez García",
+      "telefono": "235123521",
       "email": "djd683yw@mail.com",
       "tipo": "Amigos"
     },
     {
       "id": 10,
-      "nombre": "Adam Rincon Pineda",
+      "nombre": "José Palomino Fernández",
       "telefono": "713666685",
-      "email": "vuw013edo@caramail.com",
-      "tipo": "Familia"
+      "email": "vuw013edosd@caramail.com",
+      "tipo": "Amigos"
     },
     {
       "id": 12,
       "nombre": "Juan Mateu Roca",
-      "telefono": "631488364",
+      "telefono": "124235235",
       "email": "oy2dx974@yahoo.es",
       "tipo": "Amigos"
     },
@@ -45,14 +38,7 @@
     {
       "id": 14,
       "nombre": "Martina Navas Ferreiro",
-      "telefono": "701023559",
-      "email": "62domsuopt@journalism.com",
-      "tipo": "Amigos"
-    },
-    {
-      "id": 15,
-      "nombre": "Martina Navas Ferreiro",
-      "telefono": "701023559",
+      "telefono": "701023558",
       "email": "62domsuopt@journalism.com",
       "tipo": "Amigos"
     },
@@ -61,7 +47,14 @@
       "nombre": "German Ramos Bermudez",
       "telefono": "687755645",
       "email": "kxpxvi1b@caramail.com",
-      "tipo": "Familia"
+      "tipo": "Trabajo"
+    },
+    {
+      "id": 17,
+      "nombre": "asgsadg",
+      "telefono": "124235333",
+      "email": "124@gmail.com",
+      "tipo": "Amigos"
     }
   ]
 }

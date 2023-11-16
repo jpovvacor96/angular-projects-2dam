@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Persona } from 'src/app/models/persona';
 import { ServicioService } from 'src/app/servicios/servicio.service';
 
@@ -13,7 +14,7 @@ export class CrearComponent {
 
   tipos: String[]=['Amigos', 'Familia', 'Trabajo'];
 
-  constructor(private servicioService: ServicioService){
+  constructor(private servicioService: ServicioService, private router:Router){
     this.persona={
       id:0,
       nombre:'',
@@ -27,7 +28,7 @@ export class CrearComponent {
     this.servicioService.crearUno(this.persona).subscribe((datos:any)=>{
       if(datos){
         alert('Nuevo contacto insertado');
-        window.location.reload();
+        this.router.navigate(["/leer"])
       }
       else{
         alert('Error en el registro del nuevo contacto')
