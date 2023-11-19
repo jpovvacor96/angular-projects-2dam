@@ -1,0 +1,12 @@
+thead tr th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #b3f05e;
+    }
+    tfoot tr th {
+    position: sticky;
+    bottom: 0;
+    z-index: 11;
+    background-color: #b3f05e;
+    }

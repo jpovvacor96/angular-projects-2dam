@@ -33,8 +33,7 @@ export class CrearComponent {
       else{
         alert('Error en el registro del nuevo contacto')
       }
-    })
-    
+    }) 
   }
 
 }

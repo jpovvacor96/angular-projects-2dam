@@ -1,0 +1,33 @@
+<div class="container rounded text-center mt-3 mb-3">
+    <h3>Lista de robots</h3>
+    <div class="m-2 p-2 table-responsive" style="height:
+    600px; overflow-y: scroll;">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Tipo</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let robot of robots">
+                <td> <img src={{robot.foto}} alt="" width="80px"> </td>
+                <td>{{robot.nombre}}</td>
+                <td>{{robot.email}}</td>
+                <td>{{robot.tipo}}</td>
+                <td>
+                  <div class="btn-group">
+                    <button class="btn btn-warning m-1 rounded" (click)="detalle(robot.id)">Detalle</button>
+                    <button class="btn btn-primary text-white m-1 rounded" (click)="modificarUno(robot.id)">Modificar</button>
+                    <button class="btn btn-danger text-white m-1 rounded" (click)="borrarUno(robot.id)">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <a class="btn btn-success m-2 text-white" routerLink="/crear" routerLinkActive="true">Nuevo robot</a>
+</div>
